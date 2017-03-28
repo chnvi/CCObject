@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB9742D1E8A371400FBD635 /* CCRequestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9742C1E8A371400FBD635 /* CCRequestUtil.swift */; };
+		DCCDCEE21E8A6D12003F53DC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCDCED21E8A612A003F53DC /* Alamofire.framework */; };
+		DCCDCEE31E8A6D12003F53DC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCCDCED21E8A612A003F53DC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCE507011E81807B00C46232 /* gogogoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507001E81807B00C46232 /* gogogoTests.swift */; };
+		DCE5070C1E81807B00C46232 /* gogogoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5070B1E81807B00C46232 /* gogogoUITests.swift */; };
+		DCE5071E1E81815700C46232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5071D1E81815700C46232 /* AppDelegate.swift */; };
+		DCE507241E81818E00C46232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE5071F1E81818E00C46232 /* Assets.xcassets */; };
+		DCE507261E81818E00C46232 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE507231E81818E00C46232 /* Info.plist */; };
+		DCE5072F1E81893800C46232 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5072E1E81893800C46232 /* Common.swift */; };
+		DCE507341E818C3B00C46232 /* CCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507311E818C3B00C46232 /* CCMainViewController.swift */; };
+		DCE507361E818C8400C46232 /* CCMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507351E818C8400C46232 /* CCMainTableViewCell.swift */; };
+		DCE5073D1E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5073A1E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.m */; };
+		DCE5073E1E8246BA00C46232 /* SLSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5073C1E8246BA00C46232 /* SLSlideMenu.m */; };
+		DCE507781E824A8A00C46232 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507401E824A8A00C46232 /* Constraint.swift */; };
+		DCE507791E824A8A00C46232 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507411E824A8A00C46232 /* ConstraintAttributes.swift */; };
+		DCE5077A1E824A8A00C46232 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507421E824A8A00C46232 /* ConstraintConfig.swift */; };
+		DCE5077B1E824A8A00C46232 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507431E824A8A00C46232 /* ConstraintConstantTarget.swift */; };
+		DCE5077C1E824A8A00C46232 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507441E824A8A00C46232 /* ConstraintDescription.swift */; };
+		DCE5077D1E824A8A00C46232 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507451E824A8A00C46232 /* ConstraintDSL.swift */; };
+		DCE5077E1E824A8A00C46232 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507461E824A8A00C46232 /* ConstraintInsets.swift */; };
+		DCE5077F1E824A8A00C46232 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507471E824A8A00C46232 /* ConstraintInsetTarget.swift */; };
+		DCE507801E824A8A00C46232 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507481E824A8A00C46232 /* ConstraintItem.swift */; };
+		DCE507811E824A8A00C46232 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507491E824A8A00C46232 /* ConstraintLayoutGuide+Extensions.swift */; };
+		DCE507821E824A8A00C46232 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5074A1E824A8A00C46232 /* ConstraintLayoutGuide.swift */; };
+		DCE507831E824A8A00C46232 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5074B1E824A8A00C46232 /* ConstraintLayoutGuideDSL.swift */; };
+		DCE507841E824A8A00C46232 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5074C1E824A8A00C46232 /* ConstraintLayoutSupport.swift */; };
+		DCE507851E824A8A00C46232 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5074D1E824A8A00C46232 /* ConstraintLayoutSupportDSL.swift */; };
+		DCE507861E824A8A00C46232 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5074E1E824A8A00C46232 /* ConstraintMaker.swift */; };
+		DCE507871E824A8A00C46232 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5074F1E824A8A00C46232 /* ConstraintMakerEditable.swift */; };
+		DCE507881E824A8A00C46232 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507501E824A8A00C46232 /* ConstraintMakerExtendable.swift */; };
+		DCE507891E824A8A00C46232 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507511E824A8A00C46232 /* ConstraintMakerFinalizable.swift */; };
+		DCE5078A1E824A8A00C46232 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507521E824A8A00C46232 /* ConstraintMakerPriortizable.swift */; };
+		DCE5078B1E824A8A00C46232 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507531E824A8A00C46232 /* ConstraintMakerRelatable.swift */; };
+		DCE5078C1E824A8A00C46232 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507541E824A8A00C46232 /* ConstraintMultiplierTarget.swift */; };
+		DCE5078D1E824A8A00C46232 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507551E824A8A00C46232 /* ConstraintOffsetTarget.swift */; };
+		DCE5078E1E824A8A00C46232 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507561E824A8A00C46232 /* ConstraintPriority.swift */; };
+		DCE5078F1E824A8A00C46232 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507571E824A8A00C46232 /* ConstraintPriorityTarget.swift */; };
+		DCE507901E824A8A00C46232 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507581E824A8A00C46232 /* ConstraintRelatableTarget.swift */; };
+		DCE507911E824A8A00C46232 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507591E824A8A00C46232 /* ConstraintRelation.swift */; };
+		DCE507921E824A8A00C46232 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5075A1E824A8A00C46232 /* ConstraintView+Extensions.swift */; };
+		DCE507931E824A8A00C46232 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5075B1E824A8A00C46232 /* ConstraintView.swift */; };
+		DCE507941E824A8A00C46232 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5075C1E824A8A00C46232 /* ConstraintViewDSL.swift */; };
+		DCE507951E824A8A00C46232 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5075D1E824A8A00C46232 /* Debugging.swift */; };
+		DCE507961E824A8A00C46232 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE5075E1E824A8A00C46232 /* Info.plist */; };
+		DCE507971E824A8A00C46232 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5075F1E824A8A00C46232 /* LayoutConstraint.swift */; };
+		DCE507981E824A8A00C46232 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507601E824A8A00C46232 /* LayoutConstraintItem.swift */; };
+		DCE507991E824A8A00C46232 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507621E824A8A00C46232 /* UILayoutSupport+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCE506FD1E81807B00C46232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE506E01E81807B00C46232 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE506E71E81807B00C46232;
+			remoteInfo = gogogo;
+		};
+		DCE507081E81807B00C46232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE506E01E81807B00C46232 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE506E71E81807B00C46232;
+			remoteInfo = gogogo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCCDCEE41E8A6D12003F53DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCCDCEE31E8A6D12003F53DC /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24BA0E8255AD85CDBA005A28 /* Pods_gogogo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gogogo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3E7EE6731A75C30FC7F660 /* Pods-gogogo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gogogo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gogogo/Pods-gogogo.debug.xcconfig"; sourceTree = "<group>"; };
+		738CE44C37C763CFF31B71CF /* Pods-gogogo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gogogo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gogogo/Pods-gogogo.release.xcconfig"; sourceTree = "<group>"; };
+		DCB9742C1E8A371400FBD635 /* CCRequestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCRequestUtil.swift; sourceTree = "<group>"; };
+		DCCDCED21E8A612A003F53DC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/gogogo-amgvioldajqphvhjpbgsbxfwstmk/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		DCCDCEDC1E8A6A90003F53DC /* Pods_gogogo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_gogogo.framework; path = "../../Library/Developer/Xcode/DerivedData/gogogo-amgvioldajqphvhjpbgsbxfwstmk/Build/Products/Debug-iphonesimulator/Pods_gogogo.framework"; sourceTree = "<group>"; };
+		DCE506E81E81807B00C46232 /* gogogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gogogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE506FC1E81807B00C46232 /* gogogoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gogogoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE507001E81807B00C46232 /* gogogoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogogoTests.swift; sourceTree = "<group>"; };
+		DCE507021E81807B00C46232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE507071E81807B00C46232 /* gogogoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gogogoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE5070B1E81807B00C46232 /* gogogoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogogoUITests.swift; sourceTree = "<group>"; };
+		DCE5070D1E81807B00C46232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE5071D1E81815700C46232 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCE5071F1E81818E00C46232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCE507231E81818E00C46232 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE5072D1E8185D000C46232 /* gogogo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gogogo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DCE5072E1E81893800C46232 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		DCE507311E818C3B00C46232 /* CCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMainViewController.swift; sourceTree = "<group>"; };
+		DCE507351E818C8400C46232 /* CCMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMainTableViewCell.swift; sourceTree = "<group>"; };
+		DCE507391E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
+		DCE5073A1E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
+		DCE5073B1E8246BA00C46232 /* SLSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLSlideMenu.h; sourceTree = "<group>"; };
+		DCE5073C1E8246BA00C46232 /* SLSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLSlideMenu.m; sourceTree = "<group>"; };
+		DCE507401E824A8A00C46232 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		DCE507411E824A8A00C46232 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		DCE507421E824A8A00C46232 /* ConstraintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
+		DCE507431E824A8A00C46232 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		DCE507441E824A8A00C46232 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		DCE507451E824A8A00C46232 /* ConstraintDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
+		DCE507461E824A8A00C46232 /* ConstraintInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
+		DCE507471E824A8A00C46232 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		DCE507481E824A8A00C46232 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		DCE507491E824A8A00C46232 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		DCE5074A1E824A8A00C46232 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		DCE5074B1E824A8A00C46232 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		DCE5074C1E824A8A00C46232 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		DCE5074D1E824A8A00C46232 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		DCE5074E1E824A8A00C46232 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		DCE5074F1E824A8A00C46232 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		DCE507501E824A8A00C46232 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		DCE507511E824A8A00C46232 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		DCE507521E824A8A00C46232 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		DCE507531E824A8A00C46232 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		DCE507541E824A8A00C46232 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		DCE507551E824A8A00C46232 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		DCE507561E824A8A00C46232 /* ConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
+		DCE507571E824A8A00C46232 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		DCE507581E824A8A00C46232 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		DCE507591E824A8A00C46232 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		DCE5075A1E824A8A00C46232 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		DCE5075B1E824A8A00C46232 /* ConstraintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		DCE5075C1E824A8A00C46232 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		DCE5075D1E824A8A00C46232 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		DCE5075E1E824A8A00C46232 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE5075F1E824A8A00C46232 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		DCE507601E824A8A00C46232 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		DCE507611E824A8A00C46232 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		DCE507621E824A8A00C46232 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCE506E51E81807B00C46232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCDCEE21E8A6D12003F53DC /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE506F91E81807B00C46232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE507041E81807B00C46232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8504E1A2AA1C0856C2DDD36A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCCDCEDC1E8A6A90003F53DC /* Pods_gogogo.framework */,
+				DCCDCED21E8A612A003F53DC /* Alamofire.framework */,
+				24BA0E8255AD85CDBA005A28 /* Pods_gogogo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE0E8BEE27636399BF20C65A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E7EE6731A75C30FC7F660 /* Pods-gogogo.debug.xcconfig */,
+				738CE44C37C763CFF31B71CF /* Pods-gogogo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC9FF1851E88FC1900907FD6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DCB9742C1E8A371400FBD635 /* CCRequestUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DCE506DF1E81807B00C46232 = {
+			isa = PBXGroup;
+			children = (
+				DCE506EA1E81807B00C46232 /* gogogo */,
+				DCE506FF1E81807B00C46232 /* gogogoTests */,
+				DCE5070A1E81807B00C46232 /* gogogoUITests */,
+				DCE506E91E81807B00C46232 /* Products */,
+				AE0E8BEE27636399BF20C65A /* Pods */,
+				8504E1A2AA1C0856C2DDD36A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCE506E91E81807B00C46232 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE506E81E81807B00C46232 /* gogogo.app */,
+				DCE506FC1E81807B00C46232 /* gogogoTests.xctest */,
+				DCE507071E81807B00C46232 /* gogogoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCE506EA1E81807B00C46232 /* gogogo */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507371E822E9E00C46232 /* tools */,
+				DCE507191E81815700C46232 /* classes */,
+				DCE5071C1E81815700C46232 /* other */,
+			);
+			path = gogogo;
+			sourceTree = "<group>";
+		};
+		DCE506FF1E81807B00C46232 /* gogogoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507001E81807B00C46232 /* gogogoTests.swift */,
+				DCE507021E81807B00C46232 /* Info.plist */,
+			);
+			path = gogogoTests;
+			sourceTree = "<group>";
+		};
+		DCE5070A1E81807B00C46232 /* gogogoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE5070B1E81807B00C46232 /* gogogoUITests.swift */,
+				DCE5070D1E81807B00C46232 /* Info.plist */,
+			);
+			path = gogogoUITests;
+			sourceTree = "<group>";
+		};
+		DCE507191E81815700C46232 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				DCE5071A1E81815700C46232 /* login */,
+				DCE5071B1E81815700C46232 /* main */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		DCE5071A1E81815700C46232 /* login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		DCE5071B1E81815700C46232 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507301E818C3B00C46232 /* controller */,
+				DCE507321E818C3B00C46232 /* model */,
+				DCE507331E818C3B00C46232 /* view */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		DCE5071C1E81815700C46232 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				DCE5072E1E81893800C46232 /* Common.swift */,
+				DCE5072D1E8185D000C46232 /* gogogo-Bridging-Header.h */,
+				DCE5071F1E81818E00C46232 /* Assets.xcassets */,
+				DCE507231E81818E00C46232 /* Info.plist */,
+				DCE5071D1E81815700C46232 /* AppDelegate.swift */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		DCE507301E818C3B00C46232 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507311E818C3B00C46232 /* CCMainViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DCE507321E818C3B00C46232 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DCE507331E818C3B00C46232 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507351E818C8400C46232 /* CCMainTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DCE507371E822E9E00C46232 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				DC9FF1851E88FC1900907FD6 /* Util */,
+				DCE5073F1E824A8A00C46232 /* snapKit */,
+				DCE507381E8246BA00C46232 /* SLSlideMenu */,
+			);
+			name = tools;
+			path = classes/tools;
+			sourceTree = "<group>";
+		};
+		DCE507381E8246BA00C46232 /* SLSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507391E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.h */,
+				DCE5073A1E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.m */,
+				DCE5073B1E8246BA00C46232 /* SLSlideMenu.h */,
+				DCE5073C1E8246BA00C46232 /* SLSlideMenu.m */,
+			);
+			path = SLSlideMenu;
+			sourceTree = "<group>";
+		};
+		DCE5073F1E824A8A00C46232 /* snapKit */ = {
+			isa = PBXGroup;
+			children = (
+				DCE507401E824A8A00C46232 /* Constraint.swift */,
+				DCE507411E824A8A00C46232 /* ConstraintAttributes.swift */,
+				DCE507421E824A8A00C46232 /* ConstraintConfig.swift */,
+				DCE507431E824A8A00C46232 /* ConstraintConstantTarget.swift */,
+				DCE507441E824A8A00C46232 /* ConstraintDescription.swift */,
+				DCE507451E824A8A00C46232 /* ConstraintDSL.swift */,
+				DCE507461E824A8A00C46232 /* ConstraintInsets.swift */,
+				DCE507471E824A8A00C46232 /* ConstraintInsetTarget.swift */,
+				DCE507481E824A8A00C46232 /* ConstraintItem.swift */,
+				DCE507491E824A8A00C46232 /* ConstraintLayoutGuide+Extensions.swift */,
+				DCE5074A1E824A8A00C46232 /* ConstraintLayoutGuide.swift */,
+				DCE5074B1E824A8A00C46232 /* ConstraintLayoutGuideDSL.swift */,
+				DCE5074C1E824A8A00C46232 /* ConstraintLayoutSupport.swift */,
+				DCE5074D1E824A8A00C46232 /* ConstraintLayoutSupportDSL.swift */,
+				DCE5074E1E824A8A00C46232 /* ConstraintMaker.swift */,
+				DCE5074F1E824A8A00C46232 /* ConstraintMakerEditable.swift */,
+				DCE507501E824A8A00C46232 /* ConstraintMakerExtendable.swift */,
+				DCE507511E824A8A00C46232 /* ConstraintMakerFinalizable.swift */,
+				DCE507521E824A8A00C46232 /* ConstraintMakerPriortizable.swift */,
+				DCE507531E824A8A00C46232 /* ConstraintMakerRelatable.swift */,
+				DCE507541E824A8A00C46232 /* ConstraintMultiplierTarget.swift */,
+				DCE507551E824A8A00C46232 /* ConstraintOffsetTarget.swift */,
+				DCE507561E824A8A00C46232 /* ConstraintPriority.swift */,
+				DCE507571E824A8A00C46232 /* ConstraintPriorityTarget.swift */,
+				DCE507581E824A8A00C46232 /* ConstraintRelatableTarget.swift */,
+				DCE507591E824A8A00C46232 /* ConstraintRelation.swift */,
+				DCE5075A1E824A8A00C46232 /* ConstraintView+Extensions.swift */,
+				DCE5075B1E824A8A00C46232 /* ConstraintView.swift */,
+				DCE5075C1E824A8A00C46232 /* ConstraintViewDSL.swift */,
+				DCE5075D1E824A8A00C46232 /* Debugging.swift */,
+				DCE5075E1E824A8A00C46232 /* Info.plist */,
+				DCE5075F1E824A8A00C46232 /* LayoutConstraint.swift */,
+				DCE507601E824A8A00C46232 /* LayoutConstraintItem.swift */,
+				DCE507611E824A8A00C46232 /* SnapKit.h */,
+				DCE507621E824A8A00C46232 /* UILayoutSupport+Extensions.swift */,
+			);
+			path = snapKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCE506E71E81807B00C46232 /* gogogo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE507101E81807B00C46232 /* Build configuration list for PBXNativeTarget "gogogo" */;
+			buildPhases = (
+				98C8A045E751F394E393711F /* [CP] Check Pods Manifest.lock */,
+				DCE506E41E81807B00C46232 /* Sources */,
+				DCE506E51E81807B00C46232 /* Frameworks */,
+				DCE506E61E81807B00C46232 /* Resources */,
+				E92DF6C430B5D9DC36B3E706 /* [CP] Embed Pods Frameworks */,
+				1C263123C7E08ACB086F6F18 /* [CP] Copy Pods Resources */,
+				DCCDCEE41E8A6D12003F53DC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gogogo;
+			productName = gogogo;
+			productReference = DCE506E81E81807B00C46232 /* gogogo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCE506FB1E81807B00C46232 /* gogogoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE507131E81807B00C46232 /* Build configuration list for PBXNativeTarget "gogogoTests" */;
+			buildPhases = (
+				DCE506F81E81807B00C46232 /* Sources */,
+				DCE506F91E81807B00C46232 /* Frameworks */,
+				DCE506FA1E81807B00C46232 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE506FE1E81807B00C46232 /* PBXTargetDependency */,
+			);
+			name = gogogoTests;
+			productName = gogogoTests;
+			productReference = DCE506FC1E81807B00C46232 /* gogogoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE507061E81807B00C46232 /* gogogoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE507161E81807B00C46232 /* Build configuration list for PBXNativeTarget "gogogoUITests" */;
+			buildPhases = (
+				DCE507031E81807B00C46232 /* Sources */,
+				DCE507041E81807B00C46232 /* Frameworks */,
+				DCE507051E81807B00C46232 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE507091E81807B00C46232 /* PBXTargetDependency */,
+			);
+			name = gogogoUITests;
+			productName = gogogoUITests;
+			productReference = DCE507071E81807B00C46232 /* gogogoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCE506E01E81807B00C46232 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "陈伟";
+				TargetAttributes = {
+					DCE506E71E81807B00C46232 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					DCE506FB1E81807B00C46232 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCE506E71E81807B00C46232;
+					};
+					DCE507061E81807B00C46232 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCE506E71E81807B00C46232;
+					};
+				};
+			};
+			buildConfigurationList = DCE506E31E81807B00C46232 /* Build configuration list for PBXProject "gogogo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCE506DF1E81807B00C46232;
+			productRefGroup = DCE506E91E81807B00C46232 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCE506E71E81807B00C46232 /* gogogo */,
+				DCE506FB1E81807B00C46232 /* gogogoTests */,
+				DCE507061E81807B00C46232 /* gogogoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCE506E61E81807B00C46232 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE507241E81818E00C46232 /* Assets.xcassets in Resources */,
+				DCE507261E81818E00C46232 /* Info.plist in Resources */,
+				DCE507961E824A8A00C46232 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE506FA1E81807B00C46232 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE507051E81807B00C46232 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C263123C7E08ACB086F6F18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gogogo/Pods-gogogo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C8A045E751F394E393711F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E92DF6C430B5D9DC36B3E706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gogogo/Pods-gogogo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCE506E41E81807B00C46232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE5071E1E81815700C46232 /* AppDelegate.swift in Sources */,
+				DCE507791E824A8A00C46232 /* ConstraintAttributes.swift in Sources */,
+				DCE507861E824A8A00C46232 /* ConstraintMaker.swift in Sources */,
+				DCE507931E824A8A00C46232 /* ConstraintView.swift in Sources */,
+				DCE5077D1E824A8A00C46232 /* ConstraintDSL.swift in Sources */,
+				DCE5072F1E81893800C46232 /* Common.swift in Sources */,
+				DCE507941E824A8A00C46232 /* ConstraintViewDSL.swift in Sources */,
+				DCE507851E824A8A00C46232 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				DCE507821E824A8A00C46232 /* ConstraintLayoutGuide.swift in Sources */,
+				DCE507981E824A8A00C46232 /* LayoutConstraintItem.swift in Sources */,
+				DCE5078F1E824A8A00C46232 /* ConstraintPriorityTarget.swift in Sources */,
+				DCE507951E824A8A00C46232 /* Debugging.swift in Sources */,
+				DCE507871E824A8A00C46232 /* ConstraintMakerEditable.swift in Sources */,
+				DCE507781E824A8A00C46232 /* Constraint.swift in Sources */,
+				DCE5077A1E824A8A00C46232 /* ConstraintConfig.swift in Sources */,
+				DCE507891E824A8A00C46232 /* ConstraintMakerFinalizable.swift in Sources */,
+				DCE5073D1E8246BA00C46232 /* SLScreenEdgePanGestureRecognizer.m in Sources */,
+				DCE5078E1E824A8A00C46232 /* ConstraintPriority.swift in Sources */,
+				DCB9742D1E8A371400FBD635 /* CCRequestUtil.swift in Sources */,
+				DCE5077E1E824A8A00C46232 /* ConstraintInsets.swift in Sources */,
+				DCE507841E824A8A00C46232 /* ConstraintLayoutSupport.swift in Sources */,
+				DCE507361E818C8400C46232 /* CCMainTableViewCell.swift in Sources */,
+				DCE5077B1E824A8A00C46232 /* ConstraintConstantTarget.swift in Sources */,
+				DCE507341E818C3B00C46232 /* CCMainViewController.swift in Sources */,
+				DCE5073E1E8246BA00C46232 /* SLSlideMenu.m in Sources */,
+				DCE507881E824A8A00C46232 /* ConstraintMakerExtendable.swift in Sources */,
+				DCE5077C1E824A8A00C46232 /* ConstraintDescription.swift in Sources */,
+				DCE507911E824A8A00C46232 /* ConstraintRelation.swift in Sources */,
+				DCE507921E824A8A00C46232 /* ConstraintView+Extensions.swift in Sources */,
+				DCE507811E824A8A00C46232 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				DCE507901E824A8A00C46232 /* ConstraintRelatableTarget.swift in Sources */,
+				DCE5077F1E824A8A00C46232 /* ConstraintInsetTarget.swift in Sources */,
+				DCE5078D1E824A8A00C46232 /* ConstraintOffsetTarget.swift in Sources */,
+				DCE507971E824A8A00C46232 /* LayoutConstraint.swift in Sources */,
+				DCE507991E824A8A00C46232 /* UILayoutSupport+Extensions.swift in Sources */,
+				DCE507801E824A8A00C46232 /* ConstraintItem.swift in Sources */,
+				DCE507831E824A8A00C46232 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				DCE5078C1E824A8A00C46232 /* ConstraintMultiplierTarget.swift in Sources */,
+				DCE5078B1E824A8A00C46232 /* ConstraintMakerRelatable.swift in Sources */,
+				DCE5078A1E824A8A00C46232 /* ConstraintMakerPriortizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE506F81E81807B00C46232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE507011E81807B00C46232 /* gogogoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE507031E81807B00C46232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE5070C1E81807B00C46232 /* gogogoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCE506FE1E81807B00C46232 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE506E71E81807B00C46232 /* gogogo */;
+			targetProxy = DCE506FD1E81807B00C46232 /* PBXContainerItemProxy */;
+		};
+		DCE507091E81807B00C46232 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE506E71E81807B00C46232 /* gogogo */;
+			targetProxy = DCE507081E81807B00C46232 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCE5070E1E81807B00C46232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		DCE5070F1E81807B00C46232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCE507111E81807B00C46232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3E7EE6731A75C30FC7F660 /* Pods-gogogo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Public/Alamofire\"";
+				INFOPLIST_FILE = gogogo/other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chnvi.gogogo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/gogogo/other/gogogo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCE507121E81807B00C46232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738CE44C37C763CFF31B71CF /* Pods-gogogo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = gogogo/other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chnvi.gogogo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/gogogo/other/gogogo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DCE507141E81807B00C46232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gogogoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chnvi.gogogoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gogogo.app/gogogo";
+			};
+			name = Debug;
+		};
+		DCE507151E81807B00C46232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gogogoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chnvi.gogogoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gogogo.app/gogogo";
+			};
+			name = Release;
+		};
+		DCE507171E81807B00C46232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gogogoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chnvi.gogogoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gogogo;
+			};
+			name = Debug;
+		};
+		DCE507181E81807B00C46232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gogogoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chnvi.gogogoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gogogo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCE506E31E81807B00C46232 /* Build configuration list for PBXProject "gogogo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE5070E1E81807B00C46232 /* Debug */,
+				DCE5070F1E81807B00C46232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE507101E81807B00C46232 /* Build configuration list for PBXNativeTarget "gogogo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE507111E81807B00C46232 /* Debug */,
+				DCE507121E81807B00C46232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE507131E81807B00C46232 /* Build configuration list for PBXNativeTarget "gogogoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE507141E81807B00C46232 /* Debug */,
+				DCE507151E81807B00C46232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE507161E81807B00C46232 /* Build configuration list for PBXNativeTarget "gogogoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE507171E81807B00C46232 /* Debug */,
+				DCE507181E81807B00C46232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCE506E01E81807B00C46232 /* Project object */;
+}
