@@ -3,3 +3,5 @@
 //
 
 #import "SLSlideMenu.h"
+#import "User.h"
+#import "ActivityIndicatorButton.h"

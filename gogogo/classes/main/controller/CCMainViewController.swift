@@ -86,7 +86,7 @@ class CCMainViewController: UIViewController {
     
     @objc private func iconClick(){
         
-        SLSlideMenu.slideMenu(withFrame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), delegate: self, direction: SLSlideMenuDirection.left, slideOffset: 250, allowSwipeCloseMenu: true, aboveNav: true, identifier: "left")
+        SLSlideMenu.slideMenu(withFrame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), delegate: self, direction: SLSlideMenuDirection.left, slideOffset: 250, allowSwipeCloseMenu: true, aboveNav: false, identifier: "left")
         
     }
     
@@ -160,6 +160,12 @@ class CCMainViewController: UIViewController {
         
     }
     
+    @objc func clickLogin(){
+        
+        CCLoginController.modalInViewContrller()
+        
+    }
+    
 }
 
 extension CCMainViewController: UITableViewDataSource{
@@ -193,7 +199,12 @@ extension CCMainViewController: SLSlideMenuProtocol{
         let headView = UIImageView(image: UIImage(named: "main_headerimg"))
         
         let nameLB = UILabel()
+        nameLB.isUserInteractionEnabled = true
         nameLB.text = "点击登录"
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(CCMainViewController.clickLogin))
+        tap.numberOfTapsRequired = 1
+        nameLB.addGestureRecognizer(tap)
         
         menuView.addSubview(headView)
         menuView.addSubview(nameLB);
