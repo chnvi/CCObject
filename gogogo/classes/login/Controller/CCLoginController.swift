@@ -102,32 +102,32 @@ class CCLoginController: UIViewController {
         codeBtn.activityIndicatorView.startAnimating()
         
 //        codeBtn.
-//        LBLoginRequestTools.sharedTools.loadCaptcha(phoneTextField.text!) { (res, error) in
-//            if error != nil {
-//                print(error)
-//                self.codeBtn.enabled = true
-//                self.codeBtn.setTitle("获取验证码", forState: .Normal)
-//                self.codeBtn.activityIndicatorView.stopAnimating()
+        LBLoginRequestTools.sharedTools.loadCaptcha(phoneTextField.text!) { (res, error) in
+            if error != nil {
+                print(error)
+                self.codeBtn.isEnabled = true
+                self.codeBtn.setTitle("获取验证码", for: .normal)
+                self.codeBtn.activityIndicatorView.stopAnimating()
 //                self.messageView.showMessage("获取验证码失败")
-//                return
-//            }
-//            
-//            let dict = res as! [String: AnyObject]
-//            guard let code = dict["code"] as? NSInteger else {
-//                return
-//            }
-//            guard let msg = dict["msg"] as? String else {
-//                return
-//            }
-//            
-//            if code == 200 {
-//                self.runtimer()
-//            }else{
-//                self.codeBtn.setTitle("获取验证码", forState: .Normal)
-//                self.codeBtn.activityIndicatorView.stopAnimating()
+                return
+            }
+            
+            let dict = res as! [String: AnyObject]
+            guard let code = dict["code"] as? NSInteger else {
+                return
+            }
+            guard let msg = dict["msg"] as? String else {
+                return
+            }
+            
+            if code == 200 {
+                self.runtimer()
+            }else{
+                self.codeBtn.setTitle("获取验证码", for: .normal)
+                self.codeBtn.activityIndicatorView.stopAnimating()
 //                self.messageView.showMessage(msg)
-//            }
-//        }
+            }
+        }
     }
     
     private func runtimer() {
@@ -260,7 +260,8 @@ class CCLoginController: UIViewController {
         let code: ActivityIndicatorButton = ActivityIndicatorButton()
 //        code.backgroundColor = ThemeColor
         code.radius = 4
-//        code.titleLabel?.font = Font.fontWithType(FontType.FZLanTingHei_L_GBK, size: 14)
+        code.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(), size: 24)
+        //        code.titleLabel?.font = Font.fontWithType(FontType.FZLanTingHei_L_GBK, size: 14)
 //        code.setTitle("获取验证码", for: .Normal)
         code.setTitle("获取验证码", for: .normal)
         code.addTarget(self, action: #selector(CCLoginController.codeButtonTouchUpInside(btn:)), for: .touchUpInside)

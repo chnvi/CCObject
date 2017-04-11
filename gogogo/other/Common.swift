@@ -24,3 +24,19 @@ func Hex2UIColor(rgbValue: uint) -> UIColor {
         alpha: CGFloat(1.0)
     )
 }
+
+let Path_User_captcha = "v1/user/captcha/"
+let Path_User_bindMob = "v1/user/bindMobile/"
+let Path_v1User_login = "v1/user/login/"
+let Path_User_register = "v1/user/register"
+let Path_Friend_cloud = "user/friend/cloud"
+let Path_seekUser_help = "v1/post/seekUser/help"
+
+let DownLoadUrl = "http://dwz.cn/thethingapp"
+
+
+let BaseURL = "http://api.yanshu.cc:81/thething/"
+
+func BaseURLAppendWith(_ path: String) -> String{
+    return String(format: "%@%@", BaseURL, path)
+}

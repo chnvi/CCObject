@@ -48,6 +48,8 @@
 		537D1FD61E94DCA5009FBC0C /* CCLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D1FD51E94DCA5009FBC0C /* CCLoginController.swift */; };
 		537D1FDB1E94DE0F009FBC0C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D1FDA1E94DE0F009FBC0C /* User.m */; };
 		537D1FDF1E94E109009FBC0C /* ActivityIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D1FDE1E94E109009FBC0C /* ActivityIndicatorButton.m */; };
+		84C1C8460B3D61DD12A41FF8 /* Pods_gogogo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA0E8255AD85CDBA005A28 /* Pods_gogogo.framework */; };
+		DC1CC4E41E9BD4C6007ED81A /* LBLoginRequestTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CC4E11E9BD4C6007ED81A /* LBLoginRequestTools.swift */; };
 		DCE507011E81807B00C46232 /* gogogoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE507001E81807B00C46232 /* gogogoTests.swift */; };
 		DCE5070C1E81807B00C46232 /* gogogoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5070B1E81807B00C46232 /* gogogoUITests.swift */; };
 		DCE5071E1E81815700C46232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5071D1E81815700C46232 /* AppDelegate.swift */; };
@@ -138,6 +140,7 @@
 		537D1FDD1E94E109009FBC0C /* ActivityIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorButton.h; sourceTree = "<group>"; };
 		537D1FDE1E94E109009FBC0C /* ActivityIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorButton.m; sourceTree = "<group>"; };
 		738CE44C37C763CFF31B71CF /* Pods-gogogo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gogogo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gogogo/Pods-gogogo.release.xcconfig"; sourceTree = "<group>"; };
+		DC1CC4E11E9BD4C6007ED81A /* LBLoginRequestTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBLoginRequestTools.swift; sourceTree = "<group>"; };
 		DCE506E81E81807B00C46232 /* gogogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gogogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE506FC1E81807B00C46232 /* gogogoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gogogoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE507001E81807B00C46232 /* gogogoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogogoTests.swift; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				537D1F7B1E94D795009FBC0C /* Pods_gogogo.framework in Frameworks */,
+				84C1C8460B3D61DD12A41FF8 /* Pods_gogogo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +251,7 @@
 		537D1FAB1E94DC5F009FBC0C /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				DC1CC4E11E9BD4C6007ED81A /* LBLoginRequestTools.swift */,
 				537D1FAC1E94DC5F009FBC0C /* CCRequestUtil.swift */,
 			);
 			path = Util;
@@ -633,6 +638,7 @@
 				537D1FB91E94DC5F009FBC0C /* ConstraintLayoutGuide.swift in Sources */,
 				537D1FCF1E94DC5F009FBC0C /* LayoutConstraintItem.swift in Sources */,
 				537D1FC61E94DC5F009FBC0C /* ConstraintPriorityTarget.swift in Sources */,
+				DC1CC4E41E9BD4C6007ED81A /* LBLoginRequestTools.swift in Sources */,
 				537D1FCC1E94DC5F009FBC0C /* Debugging.swift in Sources */,
 				537D1FBE1E94DC5F009FBC0C /* ConstraintMakerEditable.swift in Sources */,
 				537D1FAF1E94DC5F009FBC0C /* Constraint.swift in Sources */,
